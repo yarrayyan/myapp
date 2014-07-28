@@ -1,0 +1,194 @@
+html,body {
+ margin:0;
+ padding:0;
+ background: #f5f5f5;
+ color: #0A0A0A;
+ /*font-family: Helvetica, Arial, sans-serif;*/
+ }
+a, img{
+	outline: none!important;
+}
+body::-webkit-scrollbar-thumb{
+background-color:#aaa;
+}
+body::-webkit-scrollbar-thumb:hover{
+background-color:#aaa;
+cursor: pointer;
+}
+body::-webkit-scrollbar-thumb:active{
+background-color:#666;
+}
+body::-webkit-scrollbar{
+width:7px;
+background-color:#cccccc;
+}
+
+/* Make Header Sticky */
+.header{ 
+  left:0;
+  top:0;
+  position:fixed;
+  width:100%;
+  }
+#header{
+height:2.65em;
+margin:0 auto;    
+background: rgb(30,87,153); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(30,87,153,1) 0%, rgba(0,34,89,1) 0%, rgba(11,49,114,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(30,87,153,1)), color-stop(0%,rgba(0,34,89,1)), color-stop(100%,rgba(11,49,114,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(30,87,153,1) 0%,rgba(0,34,89,1) 0%,rgba(11,49,114,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(30,87,153,1) 0%,rgba(0,34,89,1) 0%,rgba(11,49,114,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(30,87,153,1) 0%,rgba(0,34,89,1) 0%,rgba(11,49,114,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(30,87,153,1) 0%,rgba(0,34,89,1) 0%,rgba(11,49,114,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#0b3172',GradientType=0 ); /* IE6-8 */
+ 
+}
+
+.header-logo{
+	line-height: 2.6em;color: #FFF; padding: 0 0.1em;
+}
+.header-user{
+	line-height: 1.4em;color: #FFF;padding: 5px 15px;margin-top: 0.3em;margin-right: 1em;
+}
+
+/* CSS for the content of page. I am giving top and bottom padding of 80px to make sure the header and footer do not overlap the content.*/
+.body { 
+margin: 5em auto 0.5em;
+overflow: auto;
+/*padding: 74px 0; */
+}
+.content{
+background: #FFF; 
+margin:auto 1em;
+border: 1px solid #DDD;
+border-radius: 10px;
+margin-top: 0.5em;
+}
+ 
+/* Make Footer Sticky */
+.footer {
+ /*background:yellow; 
+ bottom:0;
+ height:3em;
+ left:0;
+ position:fixed;
+ width:100%;*/
+ text-align: center;line-height: 3em;background: #E9E9E9;color: #666;font-size: 0.9em;
+ }
+ 
+.header-menu{
+margin:0 auto;
+height:2em;
+background: #1b75bb;
+padding: 3.5px;
+}
+ 
+.header-menu ul {
+    position: relative;             
+    width: 100%;   
+    padding: 5px 15px;
+    display: inline;
+    list-style-type: none;
+ }
+.header-menu ul li {
+    display: inline;
+    outline: none;   
+}
+.header-menu ul li a {
+    position: relative;
+    margin-bottom: 0px;
+    padding: 5px 15px 6px 15px;                
+    color: #fff;    
+    display: inline;
+    list-style: none;
+    text-decoration: none; 
+}
+.header-menu ul li a:hover {
+color: #000; 
+background: #f5f5f5;
+}
+.header-menu ul li a.selected{
+	color: #000;		
+    background: #f5f5f5;   
+}
+.navbar-search{
+	margin: 0!important;
+	margin-top: -0.6px!important;
+ }
+.quick-search{
+	height: 22px!important; 
+	width: 11em;
+	padding: 0 8px!important;
+	margin: 0!important;
+	border-radius: 2em;
+	color: #003f7f;
+}
+.username{
+	padding: 6px 10px!important;
+	color: #F0F0F0!important;
+	text-decoration: none!important;
+}
+.username:hover{
+	background: #F0F0F0!important;
+	color: #1e5799!important;
+	text-decoration: none!important;
+}
+.username:active{
+	background: #F0F0F0!important;
+	color: #1e5799!important;
+	text-decoration: none!important;
+}
+.username-dropdown{
+	margin-top: -32px;margin-right: 27px;
+}
+.username-dropdown a:hover{
+	background: #1b75bb!important;
+	color: #FFF!important;
+}
+
+/*tooltip customization*/
+.tooltip-color + .tooltip > .tooltip-inner {
+    background-color: #fff; 
+    color: #000;
+    padding: 3px 10px!important;
+    font-size: 1.1em!important; 
+    border: 1px solid #0fb4e7; 
+}
+
+.tooltip-color + .tooltip.top > .tooltip-arrow{
+    bottom:0;
+    left:50%;
+    margin-left:-5px;
+    border-left:5px solid transparent;
+    border-right:5px solid transparent;
+    border-top:5px solid #0fb4e7
+}
+.tooltip-color + .tooltip.left > .tooltip-arrow{
+    top:50%;
+    right:0;
+    margin-top:-5px;
+    border-top:5px solid transparent;
+    border-bottom:5px solid transparent;
+    border-left:5px solid #0fb4e7;
+}
+.tooltip-color + .tooltip.bottom > .tooltip-arrow{
+    top:0;
+    left:50%;
+    margin-left:-5px;
+    border-left:5px solid transparent;
+    border-right:5px solid transparent;
+    border-bottom:5px solid #0fb4e7;
+}
+.tooltip-color + .tooltip.right > .tooltip-arrow{
+    top:50%;
+    left:0;
+    margin-top:-5px;
+    border-top:5px solid transparent;
+    border-bottom:5px solid transparent;
+    border-right:5px solid #0fb4e7;
+}
+
+.alert{
+	height: 3em!important;
+	line-height: 0.7em;	
+}

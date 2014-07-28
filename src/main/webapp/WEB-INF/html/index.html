@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en" ng-app="AngularSpringApp">
+<head>
+    <meta charset="utf-8">
+    <title>IQMS App</title>
+    <link rel="stylesheet" href="resources/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="resources/bootstrap/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="resources/fontawesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="resources/css/style.css"/>
+    <link rel="stylesheet" href="resources/css/layout.css"/>    
+    <link rel="stylesheet" href="resources/css/app.css"/>    
+</head>
+<body>
+    <div class="layout" ng-controller="MainCtrl" ng-init='init(${links})'>
+        <div class="layout-header">
+            <div>welcome......................................</div>
+            <div>
+                <ul ng-repeat="link in links">
+                   <li><a href="#/{{link.value}}">{{link.name}}</a></li>                    
+                </ul>
+            </div>           
+        </div>
+        <div class="layout-body">
+               
+            <div id="wrapper">
+
+                <ul class="menu">
+                    <li><a href="#/cars">Cars</a></li>
+                    <li><a href="#/trains">Trains</a></li>       
+                </ul>
+                <br>                
+                
+                <hr class="" />
+                <div ng-view></div>
+
+            </div>
+        </div>
+        <div class="layout-footer">
+            <!--<h4 class="text-center">Powered by IQ</h4>-->
+        </div>
+    </div> 
+
+<script src="resources/js/lib/jquery-1.10.1.min.js"></script>
+<script src="resources/js/lib/bootstrap.min.js"></script>
+<script src="resources/js/lib/angular/angular.js"></script>
+<script src="resources/js/app.js"></script>
+<script src="resources/js/services.js"></script>
+<script src="resources/js/controllers/CarController.js"></script>
+<script src="resources/js/controllers/TrainController.js"></script>
+<script src="resources/js/filters.js"></script>
+<script src="resources/js/directives.js"></script>
+</body>
+</html>
